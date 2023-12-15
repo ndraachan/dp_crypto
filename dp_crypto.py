@@ -137,7 +137,7 @@ def get_key(session, found):
         key_charset = "".join([chr(c) for c in range(32, 127)])
     else:
         if key_charset == 'hex':
-            key_charset = '01234567890ABCDEF'
+            key_charset = '01234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
     print("Attacking " + args.url)
     print(
